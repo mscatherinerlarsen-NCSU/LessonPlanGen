@@ -10,7 +10,7 @@ st.set_page_config(page_title="AI Lesson Planner", page_icon="📚", layout="cen
 # We will set this up in the Streamlit Cloud dashboard later.
 try:
     genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
-    model = genai.GenerativeModel('gemini-1.5-pro') # Using the standard text model
+    model = genai.GenerativeModel('gemini-2.5-flash') # Using the standard text model
 except KeyError:
     st.warning("API Key not found. We will configure this in Streamlit later!")
 
